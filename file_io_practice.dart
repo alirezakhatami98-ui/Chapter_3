@@ -9,7 +9,6 @@ Future<void> main() async {
 
   final file = File('${dir.path}/log.txt');
   if (!await file.exists()) {
-    await file.create();
     print('File created at ${file.path}');
   }
 
